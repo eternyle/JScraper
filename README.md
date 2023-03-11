@@ -12,7 +12,7 @@ go get github.com/eternyle/JScraper
 ### Usage
 
 ```
-cat subdomain.txt | JScraper
+cat subdomain.txt | JScraper | sort -u
 ```
 
 #### Output
@@ -39,7 +39,7 @@ https://hello.azizhakim.com
 JScraper + Linkfinder
 
 ```
-cat subdomain.txt | JScraper >> jsfile.txt
+cat subdomain.txt | JScraper | sort -u | tee jsfile.txt
 ```
 
 ```
