@@ -39,7 +39,7 @@ https://hello.azizhakim.com
 JScraper + Linkfinder
 
 ```
-cat subdomain.txt | JScraper | sort -u | tee jsfile.txt
+cat subdomain.txt | JScraper | sort -u | grep "domain" | tee jsfile.txt
 ```
 
 ```
