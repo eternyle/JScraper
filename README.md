@@ -35,3 +35,13 @@ https://abc.azizhakim.com
 https://xyz.azizhakim.com
 https://hello.azizhakim.com
 ```
+
+JScraper + Linkfinder
+
+```
+cat subdomain.txt | JScraper >> jsfile.txt
+```
+
+```
+while read line; do python3 ~/tools/linkfinder.py -i $line -o cli ; done < jsfile.txt
+```
